@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Designing App</title>
+    <style>
+        .dress {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .upper-part {
+            display: flex;
+            align-items: center;
+        }
+        .top {
+            width: 150px;
+            height: 100px;
+            background-color: #f1c40f;
+        }
+        .sleeve {
+            width: 50px;
+            height: 100px;
+            background-color: #2ecc71;
+            margin: 0 10px; /* Adding space between sleeves and the top */
+        }
+        .skirt {
+            width: 150px;
+            height: 100px;
+            background-color: #e74c3c;
+            margin-top: 10px;
+        }
+        .controls {
+            margin-top: 20px;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dress">
+    <div class="upper-part">
+        <div class="sleeve"></div>
+        <div class="top"></div>
+        <div class="sleeve"></div>
+    </div>
+    <div class="skirt"></div>
+</div>
+
+<div class="controls">
+    <button onclick="randomizeColor('top')">Randomize Top Color</button>
+    <button onclick="randomizeColor('sleeves')">Randomize Sleeves Color</button>
+    <button onclick="randomizeColor('skirt')">Randomize Skirt Color</button>
+    <button onclick="resetColors()">Reset Colors</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
